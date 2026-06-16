@@ -46,7 +46,7 @@ sequenceDiagram
     Agent->>KB: check_repair_eligibility(ROUTING_PATH_DOWN)
     KB-->>Agent: repairable -> route_payment_alternative (ops)
     Note over Agent: Correlates: missing BIC is a symptom of route DOWN
-    Agent-->>Ops: Root cause ROUTING_PATH_DOWN; recommend re-route (approval needed)
+    Agent-->>Ops: Root cause ROUTING_PATH_DOWN<br/>recommend re-route, approval needed
     Ops->>Agent: Approve
     Agent->>MCP: route_payment_alternative + approval token
     MCP->>Audit: log (guardrail validated)
