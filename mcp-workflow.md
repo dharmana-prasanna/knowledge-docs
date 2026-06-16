@@ -1,5 +1,3 @@
-Here are side-by-side sequence diagrams for both use cases, drawn from the actual flows in the running app.
-
 ## Use Case 1 — REF-827261 (validation error that's really a routing failure)
 
 ### Without AI (scripted workflow)
